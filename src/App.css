@@ -1,0 +1,55 @@
+body {
+  height: 92vh; /* اجعل ارتفاع الجسم ليملأ الشاشة */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني بين اللونين */
+  color: white; 
+}
+
+.App {
+  color: white; /* لون النص */
+  width: 90%; /* عرض مرن */
+  max-width: 600px; /* تحديد عرض أقصى */
+  border: solid 1px white;
+  margin: 50px auto; /* محاذاة إلى المركز */
+  padding: 25px 15px;
+}
+
+.to-do-container {
+  color: white; /* لون النص */
+  display: flex;
+  flex-direction: column;
+}
+
+.to-do-container ul li {
+  color: white; /* لون النص */
+  width: 90%; 
+  overflow-wrap: break-word;
+  list-style-type: "✍️";
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+input {
+  width: 100%; /* عرض مرن للحقل */
+  max-width: 300px; /* عرض أقصى */
+}
+
+button {
+  width: 100%; /* عرض مرن للزر */
+  max-width: 300px; /* عرض أقصى */
+  margin-top: 10px; /* إضافة مسافة بين حقل الإدخال والزر */
+}
+
+span {
+  margin-left: 10px; /* استخدام margin-left بدلاً من margin-right */
+}
